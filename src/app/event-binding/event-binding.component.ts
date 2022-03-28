@@ -12,12 +12,15 @@ export class EventBindingComponent implements OnInit {
   idx = 0;
   i = 0;
 
-  constructor() { }
+  constructor() {  }
+
+  spinnerMode: any = "determinate";
+  btnEnable = true;
 
   ngOnInit(): void {
     setInterval( () => {
       this.idx = (this.idx+1) % this.buttonColors.length;
-    }, 500)
+    }, 5000)
   }
 
   save(){
@@ -27,5 +30,14 @@ export class EventBindingComponent implements OnInit {
   inc(){
     this.i++;
     this.buttonName = "It was clicked " + this.i+ " times."
+  }
+
+  disable() {
+    this.btnEnable = false;
+    this.spinnerMode = "indeterminate";
+    setTimeout ( ()=>{
+      this.btnEnable = true;
+      this.spinnerMode = "determinate";
+    }, 5000);
   }
 }

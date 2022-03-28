@@ -8,6 +8,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { MatButtonModule } from '@angular/material/button';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
