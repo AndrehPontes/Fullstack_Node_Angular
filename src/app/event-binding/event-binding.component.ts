@@ -11,11 +11,13 @@ export class EventBindingComponent implements OnInit {
   buttonColors = ['warn', 'accent', 'primary'];
   idx = 0;
   i = 0;
+  selectedOption: any;
 
   constructor() {  }
 
   spinnerMode: any = "determinate";
   btnEnable = true;
+  selectDisabled = false;
 
   ngOnInit(): void {
     setInterval( () => {
@@ -40,4 +42,15 @@ export class EventBindingComponent implements OnInit {
       this.spinnerMode = "determinate";
     }, 5000);
   }
+
+  cbChanger(event: any) {
+    console.log(event.checked)
+    this.selectDisabled = event.checked;
+  }
+
+  selectionChange(event:any) {
+    console.log(event)
+    this.selectedOption = event.value;
+  }
+
 }

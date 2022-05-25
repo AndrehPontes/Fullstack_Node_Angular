@@ -8,7 +8,12 @@ import { MatSliderModule } from '@angular/material/slider';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { MatButtonModule } from '@angular/material/button';
 import { EventBindingComponent } from './event-binding/event-binding.component';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 
 @NgModule({
@@ -23,6 +28,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatSliderModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
