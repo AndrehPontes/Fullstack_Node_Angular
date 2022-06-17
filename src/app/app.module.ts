@@ -18,6 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { MatRadioModule } from '@angular/material/radio';
     EventBindingComponent,
     TwoWayDataBindingComponent,
     NgStyleComponent,
+    NgClassComponent,
   ],
   imports: [
     BrowserModule,
