@@ -1,0 +1,17 @@
+.RadioGroup {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.RadioButton {
+  padding-bottom: 20px;
+}
+
+.CardFooter{
+ margin: 1px;
+}
+
+mat-card {
+  margin: 40px;
+}
+

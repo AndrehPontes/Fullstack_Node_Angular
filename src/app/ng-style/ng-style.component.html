@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-title>
+    Select
+  </mat-card-title>
+  <mat-card-content>
+    <p>Select a color:</p>
+    <mat-radio-group class="RadioGroup" [(ngModel)]="myColor" name="myColor">
+      <mat-radio-button class="RadioButton" value="blue">Blue</mat-radio-button>
+      <mat-radio-button class="RadioButton"value="red">Red</mat-radio-button>
+      <mat-radio-button class="RadioButton" value="green">Green</mat-radio-button>
+    </mat-radio-group>
+    <br> <br>
+    Choose a font size:<br>
+    <mat-form-field>
+      <mat-select placeholder="Enter a font size:" [(ngModel)]="myFontSize" name="myFontSize">
+        <mat-option value="12px">Font size: 12 </mat-option>
+        <mat-option value="16px">Font size: 16</mat-option>
+        <mat-option value="20px">Font size: 20</mat-option>
+        <mat-option value="30px">Font size: 30</mat-option>
+        <mat-option value="40px">Font size: 40</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-footer class="CardFooter">
+    <p>Result:</p>
+    <some-element [ngStyle]=" { fontSize: myFontSize, color: myColor}" > ANDRE PONTES</some-element>
+  </mat-card-footer>
+</mat-card>
